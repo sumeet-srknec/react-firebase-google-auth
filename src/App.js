@@ -6,7 +6,6 @@ function App() {
   const { isLoggedOut } = UserAuth();
   return (
     <div>
-      <p className='text-red-100 text-2xl'>Testing 2</p>
       {
         isLoggedOut ? (<NonUserRoutes/>) : (<UserRoutes/>)
       }
